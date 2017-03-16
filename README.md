@@ -8,6 +8,8 @@ requirements:
  apt-get install virtualbox
  apt-get install vagrant
 
+ or run ./install.sh  ## TODO make
+
 for install on localhost run:
   ansible-playbook -i hosts playbook.yml -c local -K
 
