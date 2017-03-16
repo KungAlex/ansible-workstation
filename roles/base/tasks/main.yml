@@ -1,0 +1,25 @@
+---
+
+- name: update and upgrade apt packages
+  apt: >
+    upgrade=yes
+    update_cache=yes
+    cache_valid_time=3600
+
+
+- name: install lists packages
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - aptitude
+    - openssh-server
+    - git
+    - git-core
+    - git-flow
+    - curl
+    - wget
+    - unzip
+    - tar
+    - gzip
+    - bzip2
+    
+

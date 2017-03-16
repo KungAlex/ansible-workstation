@@ -1,0 +1,13 @@
+---
+# Utils Packages
+
+- name: install lists packages
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - inkscape
+    - pidgin
+    - build-essential
+    - libwebsockets-dev
+    - libmysqlclient-dev
+    
+

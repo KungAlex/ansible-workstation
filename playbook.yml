@@ -1,0 +1,18 @@
+##
+# Ansible playbook 
+#
+
+- hosts: local
+  sudo: yes
+  user: alex
+
+  roles:
+   #- base
+   #- python
+   #- utils
+   #- virtualenv
+   #- chromium
+   #- desktop
+   # - docker
+   # - conky
+   # - pycharm

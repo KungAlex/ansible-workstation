@@ -1,0 +1,11 @@
+---
+
+- name: install lists packages
+  apt: pkg={{ item }} state=present
+  with_items:
+    - texmaker
+    - texlive
+    - texlive-latex3
+    - texlive-latex-extra
+    - texlive-lang-german
+    - texlive-full

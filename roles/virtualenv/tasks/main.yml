@@ -1,0 +1,18 @@
+---
+
+- name: Install (virtualenv) python package.
+  pip:
+    name: virtualenv
+
+- name: Add requirements file
+  copy: src=requirements.txt
+        dest=/home/alex/requirements.txt
+
+- name: Install requirements
+  pip:
+    requirements: /home/alex/requirements.txt
+    virtualenv: /home/alex/venvs/myenv
+    virtualenv_python: python3
+
+
+

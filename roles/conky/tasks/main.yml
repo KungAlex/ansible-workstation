@@ -1,0 +1,6 @@
+---
+
+name: install lists packages
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - conky-all

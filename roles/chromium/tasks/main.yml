@@ -1,0 +1,11 @@
+---
+# Utils Packages
+
+- name: install lists packages
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - chromium-browser
+    - chromium-browser-l10n
+    - chromium-codecs-ffmpeg
+    - chromium-codecs-ffmpeg-extra
+

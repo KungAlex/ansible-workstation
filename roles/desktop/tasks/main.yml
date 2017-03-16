@@ -1,0 +1,12 @@
+---
+# Desktop Packages
+
+- name: install lists packages
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - cinnamon
+    - gnome-session-flashback
+    #- kubuntu-desktop
+
+
+

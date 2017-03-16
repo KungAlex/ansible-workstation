@@ -1,0 +1,21 @@
+---
+
+#- name: Update all packages to the latest version apt: 	upgrade=dist
+
+- name: install lists packages
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - python-pip
+    - python3-pip
+    - bpython3
+
+- name: Configure | add to PATH
+  copy: src=set-alias.sh
+        dest=/etc/profile.d
+  sudo: yes
+
+
+
+
+
+

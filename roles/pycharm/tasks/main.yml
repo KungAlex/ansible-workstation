@@ -1,0 +1,19 @@
+---
+- name: download pycharm
+  get_url:
+    url: "https://download.jetbrains.com/python/pycharm-professional-2016.3.2.tar.gz"
+    dest: "~/Downloads/pycharm-professional-2016.3.2.tar.gz"
+
+- name: install | pycharm
+  unarchive:
+    src: "~/Downloads/pycharm-professional-2016.3.2.tar.gz"
+    dest: "~/"
+
+- name: Configure | add to PATH
+  copy: src=add-path.sh
+        dest=/etc/profile.d
+  sudo: yes
+  
+
+
+  

@@ -1,0 +1,13 @@
+Django==1.10.5
+gunicorn==19.3.0
+requests==2.13.0
+Pygments==2.2.0
+blessings==1.6
+bpython==0.16
+curtsies==0.2.11
+greenlet==0.4.12
+six==1.10.0
+wcwidth==0.1.7
+mysqlclient
+Pillow
+django-jwt-auth
