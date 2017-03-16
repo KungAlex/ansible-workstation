@@ -3,16 +3,17 @@
 #
 
 - hosts: local
-  sudo: yes
-  user: alex
+  become: yes
+  become_user: alex
 
   roles:
-   #- base
-   #- python
-   #- utils
-   #- virtualenv
-   #- chromium
-   #- desktop
-   # - docker
-   # - conky
-   # - pycharm
+    - vmbox
+  # - base
+  # - python
+  # - utils
+  # - virtualenv
+  # - chromium
+  # - docker
+  # - pycharm
+  # - conky
+  # - desktop

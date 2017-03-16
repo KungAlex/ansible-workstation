@@ -1,0 +1,12 @@
+---
+
+- name: install lists packages
+  become: yes
+  become_user: root
+  become_method: sudo
+
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - virtualbox
+    - virtualbox-qt
+    - virtualbox-dkms
