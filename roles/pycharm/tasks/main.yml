@@ -2,12 +2,12 @@
 - name: download pycharm
   get_url:
     url: "https://download.jetbrains.com/python/pycharm-professional-2016.3.2.tar.gz"
-    dest: "~/Downloads/pycharm-professional-2016.3.2.tar.gz"
+    dest: "/home/alex/Downloads/pycharm-professional-2016.3.2.tar.gz"
 
 - name: install | pycharm
   unarchive:
-    src: "~/Downloads/pycharm-professional-2016.3.2.tar.gz"
-    dest: "~/"
+    src: "/home/alex/Downloads/pycharm-professional-2016.3.2.tar.gz"
+    dest: "/home/alex/"
 
 - name: Configure | add to PATH
   copy: src=add-path.sh

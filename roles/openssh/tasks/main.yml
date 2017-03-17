@@ -1,5 +1,4 @@
 ---
-# Conky Package
 
 - name: install lists packages
   apt: pkg={{ item }} state=installed
@@ -7,4 +6,4 @@
   become_user: root
 
   with_items:
-    - conky-all
+   - openssh-server

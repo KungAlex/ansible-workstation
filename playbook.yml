@@ -7,13 +7,25 @@
   become_user: alex
 
   roles:
-    - vmbox
-  # - base
-  # - python
-  # - utils
-  # - virtualenv
-  # - chromium
-  # - docker
-  # - pycharm
-  # - conky
-  # - desktop
+    # Rolls installed with apt
+     - base
+     - utils
+     - chromium
+     - python
+     - vmbox
+     - vagrant
+     - virtualenv
+    # - conky
+    # - desktop
+    # - latex
+    # - openssh
+
+    # Rolls used with curl
+
+    # - docker
+    # - pycharm
+    # - packer
+    # - rancher
+    # - terraform
+
+

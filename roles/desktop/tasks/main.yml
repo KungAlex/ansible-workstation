@@ -3,10 +3,12 @@
 
 - name: install lists packages
   apt: pkg={{ item }} state=installed
-  with_items:
+  become: yes
+  become_user: root
+
     - cinnamon
     - gnome-session-flashback
-    #- kubuntu-desktop
+    - kubuntu-desktop
 
 
 

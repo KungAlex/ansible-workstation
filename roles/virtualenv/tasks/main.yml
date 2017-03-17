@@ -11,7 +11,7 @@
 - name: Install requirements
   pip:
     requirements: /home/alex/requirements.txt
-    virtualenv: /home/alex/venvs/myenv
+    virtualenv: /home/alex/.venvs/env
     virtualenv_python: python3
 
 
