@@ -1,0 +1,19 @@
+---
+- name: download webstrom
+  get_url:
+    url: "https://download.jetbrains.com/webstorm/WebStorm-2016.3.4.tar.gz"
+    dest: "/home/alex/Downloads/WebStorm-2016.3.4.tar.gz"
+
+- name: install  webstrom
+  unarchive:
+    src: "/home/alex/Downloads/WebStorm-2016.3.4.tar.gz"
+    dest: "/home/alex/"
+
+- name: add to PATH
+  copy: src=add-path.sh
+        dest=/etc/profile.d
+  sudo: yes
+  
+
+
+  

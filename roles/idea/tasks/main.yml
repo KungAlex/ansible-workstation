@@ -1,0 +1,20 @@
+---
+- name: download idea
+  get_url:
+    url: "https://download.jetbrains.com/idea/ideaIU-2016.3.5.tar.gz"
+
+    dest: "/home/alex/Downloads/ideaIU-2016.3.5.tar.gz"
+
+- name: install idea
+  unarchive:
+    src: "/home/alex/Downloads/ideaIU-2016.3.5.tar.gz"
+    dest: "/home/alex/"
+
+- name: add to PATH
+  copy: src=add-path.sh
+        dest=/etc/profile.d
+  sudo: yes
+  
+
+
+  
