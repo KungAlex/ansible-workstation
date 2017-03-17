@@ -15,4 +15,5 @@ for install on localhost run:
 
 
 for test in Virtualbox run:
-  vagrant init boxcutter/ubuntu1604-desktop; vagrant up --provider virtualbox
+  vagrant init
+  vagrant up
