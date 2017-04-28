@@ -2,6 +2,7 @@
 - name: Install Docker
   shell: curl -sSL https://get.docker.com/ | sh
 
+# TODO
 - name: Set docker user
   become: yes
   become_user: root
