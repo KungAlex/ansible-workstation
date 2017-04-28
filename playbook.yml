@@ -20,7 +20,7 @@
 
     # Rolls used with curl
     - docker
-    - pycharm
+    #- pycharm
 
 
     ## TODO check
