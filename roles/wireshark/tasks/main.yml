@@ -1,0 +1,10 @@
+---
+# Wireshark Package
+
+- name: install lists packages
+  apt: pkg={{ item }} state=installed
+  become: yes
+  become_user: root
+
+  with_items:
+    - wireshark
