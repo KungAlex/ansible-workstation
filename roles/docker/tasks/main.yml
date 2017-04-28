@@ -3,10 +3,16 @@
   shell: curl -sSL https://get.docker.com/ | sh
 
 - name: Set docker user
+  become: yes
+  become_user: root
   user:
-    name: alex
-    group: docker
+    name=alex
+    groups=docker
+    append=yes
 
+- name: Install Docekr Compose with Pip
+  pip:
+    name=docker-compose
 
 #- name: Install (docker-compose) python package.
 #  shell: curl -L https://github.com/docker/compose/releases/download/1.11.2/docker-compose-`uname -s`-`uname -m` > /usr/bin/docker-compose
