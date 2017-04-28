@@ -2,11 +2,18 @@
 - name: Install Docker
   shell: curl -sSL https://get.docker.com/ | sh
 
-- name: Install (docker-compose) python package.
-  shell: curl -L https://github.com/docker/compose/releases/download/1.11.2/docker-compose-`uname -s`-`uname -m` > /usr/bin/docker-compose
+# Add the user 'johnd' with a specific uid and a primary group of 'admin'
+- name: set docker user
+- user:
+    name: alex
+    group: docker
 
-- name: Install (docker-compose) python package.
-  shell: chmod +x /usr/bin/docker-compose
+
+#- name: Install (docker-compose) python package.
+#  shell: curl -L https://github.com/docker/compose/releases/download/1.11.2/docker-compose-`uname -s`-`uname -m` > /usr/bin/docker-compose
+
+#- name: Install (docker-compose) python package.
+#  shell: chmod +x /usr/bin/docker-compose
 
   ## TODO add docker maschine
 
