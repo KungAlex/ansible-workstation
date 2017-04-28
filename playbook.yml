@@ -2,30 +2,33 @@
 # Ansible playbook 
 #
 
-- hosts: local
+- hosts: all
   become: yes
   become_user: alex
 
   roles:
     # Rolls installed with apt
-     - base
-     - utils
-     - chromium
-     - python
-     - vmbox
-     - vagrant
-     - virtualenv
-    # - conky
-    # - desktop
-    # - latex
-    # - openssh
+    - base
+    #- utils
+    #- chromium
+    - python
+    #- vmbox
+    #- vagrant
+    #- conky
+    #- latex
+    #- wireshark
 
     # Rolls used with curl
+    - docker
+    - pycharm
 
-    # - docker
-    # - pycharm
+
+    ## TODO check
+    #- openssh
     # - packer
     # - rancher
     # - terraform
+    #- virtualenv
+    #- desktop
 
 
