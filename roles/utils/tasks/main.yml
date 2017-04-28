@@ -9,8 +9,27 @@
     - inkscape
     - fish
     - pidgin
+    - pidgin-otr
     - build-essential
     - libwebsockets-dev
     - libmysqlclient-dev
+    - mosquitto-clients
+    - httpie
+    - putty
+    - gource
+    - pgadmin3
+    - nmap
+
+    #  libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
+    # pip install --user virtualenvwrapper
+    # echo "source virtualenvwrapper.sh" >> ~/.bashrc
+    # source ~/.bashrc
+
+
+    #  geckodriver-v0.15.0-linux64.tar
+
+    ## Java sudo apt-get install openjdk-8-jdk openjdk-8-demo openjdk-8-doc openjdk-8-jre-headless openjdk-8-source
+
+    ### ESP Tools pip install esptool ... + esplora?
     
 

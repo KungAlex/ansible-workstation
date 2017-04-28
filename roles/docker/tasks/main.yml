@@ -8,3 +8,5 @@
 - name: Install (docker-compose) python package.
   shell: chmod +x /usr/bin/docker-compose
 
+  ## TODO add docker maschine
+
