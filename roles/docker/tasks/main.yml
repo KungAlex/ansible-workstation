@@ -2,9 +2,8 @@
 - name: Install Docker
   shell: curl -sSL https://get.docker.com/ | sh
 
-# Add the user 'johnd' with a specific uid and a primary group of 'admin'
-- name: set docker user
-- user:
+- name: Set docker user
+  user:
     name: alex
     group: docker
 
