@@ -9,18 +9,18 @@
   roles:
     # Rolls installed with apt
     - base
-    #- utils
-    #- chromium
+    - utils
+    - chromium
     - python
-    #- vmbox
-    #- vagrant
-    #- conky
-    #- latex
-    #- wireshark
+    - vmbox
+    - vagrant
+    - conky
+    - latex
+    - wireshark
 
     # Rolls used with curl
     - docker
-    #- pycharm
+    - pycharm
 
 
     ## TODO check

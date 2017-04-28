@@ -9,6 +9,7 @@
     src: "/home/alex/Downloads/pycharm-professional-2017.1.2.tar.gz"
     dest: "/home/alex/"
 
+# TODO
 - name: Configure | add to PATH
   copy: src=add-path.sh
         dest=/etc/profile.d
